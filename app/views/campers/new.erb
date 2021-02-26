@@ -1,0 +1,9 @@
+<h1> Add a new Camper! </h1>
+
+<%= form_for @camper  do |form_helper|%>
+    <%= form_helper.label :name %>
+    <%= form_helper.text_field :name %><br/>
+    <%= form_helper.label :age %>
+    <%= form_helper.number_field :age %><br/>
+    <%= form_helper.submit "Done!" %>
+<% end %>

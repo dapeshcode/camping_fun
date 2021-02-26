@@ -1,4 +1,11 @@
 <h2>Here are All the Campers</h2>
 
-<%# Display a list all of the campers %>
+
+<main>
+    <ul>
+    <% @campers.each do |camper| %>
+        <li><%=link_to camper.name, camper%></li>
+    <% end %>
+    </ul>
+</main>
 
